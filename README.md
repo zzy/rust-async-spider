@@ -1,8 +1,8 @@
-# rust-async-crawl-example
+# rust-articles-razor
 
 Just an example for crawling website with: 
 
 - async-std
-- reqwest
+- surf
 - scraper
 - colored
