@@ -1337,7 +1337,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "rust-articles-razor"
+name = "rust-async-crawler"
 version = "0.1.0"
 dependencies = [
  "async-std",

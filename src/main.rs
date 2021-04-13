@@ -2,18 +2,21 @@ mod sites;
 
 #[async_std::main]
 async fn main() {
-    match sites::hacker_news().await {
+    // this-week-in-rust.org
+    match sites::this_week_in_rust_org::crawling().await {
         Ok(site) => println!("{}", site),
-        Err(_) => eprintln!("Error fetching Hacker News data."),
+        Err(_) => eprintln!("Error fetching this-week-in-rust.org data."),
     }
 
-    match sites::datatau().await {
+    // lobste.rs
+    match sites::lobste_rs::crawling().await {
         Ok(site) => println!("{}", site),
-        Err(_) => eprintln!("Error fetching DataTau data."),
+        Err(_) => eprintln!("Error fetching lobste.rs data."),
     }
 
-    match sites::lobsters().await {
+    // datatau.net
+    match sites::datatau_net::crawling().await {
         Ok(site) => println!("{}", site),
-        Err(_) => eprintln!("Error fetching DataTau data."),
+        Err(_) => eprintln!("Error fetching datatau.net data."),
     }
 }
