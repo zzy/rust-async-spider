@@ -1337,7 +1337,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "rust-async-crawler"
+name = "rust-async-spider"
 version = "0.1.0"
 dependencies = [
  "async-std",

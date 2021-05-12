@@ -1,6 +1,6 @@
-# rust-async-crawler
+# rust-async-spider
 
-Just a clean boilerplate for crawling website with: 
+Just a clean boilerplate for crawling website & scrapping data with: 
 
 - async-std
 - surf
@@ -10,8 +10,8 @@ Just a clean boilerplate for crawling website with:
 ## How to use?
 
 ``` bash
-git clone git@github.com:zzy/rust-async-crawler.git
-cd rust-async-crawler
+git clone git@github.com:zzy/rust-async-spider.git
+cd rust-async-spider
 cargo build
 cargo run
 ```
