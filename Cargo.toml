@@ -1,18 +1,18 @@
 [package]
 name = "rust-async-spider"
 version = "0.1.0"
-authors = ["zzy <9809920@qq.com>"]
+authors = ["zzy <ask@rusthub.org>"]
 edition = "2021"
 resolver = "2"
 
 [dependencies]
-async-std = { version = "1.10.0", features = ["attributes"] }
-surf = "2.3.2"
-scraper = "0.12.0"
-colored = "2.0.0"
+async-std = { version = "1.12", features = ["attributes"] }
+surf = "2.3"
+scraper = "0.15"
+colored = "2.0"
 
-[profile.dev]
-split-debuginfo = "unpacked"
+# [profile.dev]
+# split-debuginfo = "unpacked"
 
 [profile.release]
 panic = "abort"
