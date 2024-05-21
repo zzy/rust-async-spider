@@ -6,10 +6,11 @@ edition = "2021"
 resolver = "2"
 
 [dependencies]
-async-std = { version = "1.12", features = ["attributes"] }
-surf = "2.3"
-scraper = "0.15"
-colored = "2.0"
+scraper = "0.19"
+colored = "2.1"
+
+tokio = { version = "1.37", features = ["rt-multi-thread", "macros"] }
+reqwest = "0.12"
 
 # [profile.dev]
 # split-debuginfo = "unpacked"

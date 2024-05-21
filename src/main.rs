@@ -1,6 +1,6 @@
 mod sites;
 
-#[async_std::main]
+#[tokio::main]
 async fn main() {
     // this-week-in-rust.org
     match sites::this_week_in_rust_org::crawling().await {

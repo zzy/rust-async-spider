@@ -3,7 +3,7 @@ pub mod lobste_rs;
 pub mod datatau_net;
 
 use std::{fmt, result::Result};
-use surf::Error;
+use reqwest::Error;
 use scraper::{ElementRef, Html, Selector};
 use colored::Colorize;
 
@@ -39,7 +39,7 @@ impl fmt::Display for Article {
 }
 
 async fn get_html(uri: &str) -> Result<Html, Error> {
-    let recv_str = surf::get(uri).recv_string().await?;
+    let recv_str = reqwest::get(uri).await?.text().await?;
     let body_html = Html::parse_document(&recv_str);
 
     Ok(body_html)

@@ -1,5 +1,5 @@
 use std::result::Result;
-use surf::Error;
+use reqwest::Error;
 use scraper::Selector;
 
 use super::{Site, Article, get_html, parse_title, parse_link};
