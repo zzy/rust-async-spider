@@ -6,10 +6,10 @@ edition = "2021"
 resolver = "2"
 
 [dependencies]
-scraper = "0.19"
+scraper = "0.20"
 colored = "2.1"
 
-tokio = { version = "1.37", features = ["rt-multi-thread", "macros"] }
+tokio = { version = "1.40", features = ["rt-multi-thread", "macros"] }
 reqwest = "0.12"
 
 # [profile.dev]
